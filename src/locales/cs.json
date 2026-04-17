@@ -1,0 +1,153 @@
+{
+  "nav": {
+    "lessons": "260+ Lekcí",
+    "tools": "AI Nástroje",
+    "arena": "Aréna",
+    "partners": "Partneři Účtů"
+  },
+  "hero": {
+    "deck1": {
+      "label": "Budoucnost Tržního Vzdělávání",
+      "headline": "Mistrovství Vnitřní Hry",
+      "description": "Zažijte první akademii řízenou AI na světě zaměřenou na architekturu obchodní psychologie. Za hranicemi technické analýzy—přestavíme vaši mysl pro arénu.",
+      "modules": "260 Modulů Živě • Angličtina",
+      "explore": "Prozkoumat Časovou Osu"
+    },
+    "deck2": {
+      "label": "Cena Nepřipravenosti",
+      "headline": "Nezůstaňte v Rozmazání",
+      "description": "Trhy se pohybují rychleji, než dokážou lidské emoce zpracovat. Zatímco se svět pohybuje závratnou rychlostí, většina obchodníků se ztrácí v rychlosti. Přestaňte reagovat. Začněte předvídat.",
+      "modules": "260 Modulů Živě • Angličtina",
+      "explore": "Prozkoumat Časovou Osu"
+    },
+    "scroll": "Rolovat"
+  },
+  "features": {
+    "label": "Navrženo pro Mistrovství",
+    "title": "Vlastní Engine",
+    "description": "Nenabízíme jen výuku tradingu; poskytujeme sadu nástrojů na profesionální úrovni, kterou používají institucionální hráči. Vzestupte skrze ekosystém.",
+    "level": "Úroveň",
+    "steps": {
+      "01": {
+        "title": "Video Akademie",
+        "desc": "Získejte přístup k 260+ prémiovým lekcím v angličtině, pokrývajícím vše od základů až po institucionální strategie.",
+        "stat": "260+ Videí"
+      },
+      "02": {
+        "title": "AI Analýza Trhu",
+        "desc": "Vlastní AI nástroje, které zpracovávají miliony datových bodů pro zvýraznění vysoce pravděpodobných obchodních příležitostí.",
+        "stat": "Real-time"
+      },
+      "03": {
+        "title": "AI Mentor",
+        "desc": "Personalizovaný AI trenér dostupný 24/7, aby odpověděl na vaše komplexní otázky a zkontroloval vaše strategie.",
+        "stat": "Vždy Živě"
+      },
+      "04": {
+        "title": "Inteligentní Deník",
+        "desc": "Pokročilý obchodní deník, který využívá AI k analýze vašeho výkonu a emočních vzorců.",
+        "stat": "Chytré Záznamy"
+      },
+      "05": {
+        "title": "Kalkulačka Rizika",
+        "desc": "Precizní inženýrství pro vaši pozici. Okamžitě vypočítejte poměr rizika a odměny a velikost lotů.",
+        "stat": "Nulová Chyba"
+      },
+      "06": {
+        "title": "Sociální Zeď",
+        "desc": "Společné centrum moderované AI pro zajištění vysoce kvalitních poznatků a autentického sdílení v komunitě.",
+        "stat": "Moderováno"
+      }
+    }
+  },
+  "arena": {
+    "status": "Aréna je nyní Aktivní",
+    "title": "Psychologická Aréna",
+    "description": "Seznamte se s 5 simulovanými mluvčími testujícími současné účastníky na téma „Riziko a Chamtivost“. Nutí vás simulovat architekturu obchodního mistrovství.",
+    "cta": "Vstoupit do Simulace",
+    "speakers": {
+      "punisher": {
+        "name": "Punisher",
+        "role": "Ochrana Kapitálu",
+        "quote": "Dnes jsi ziskový. No a co? Jeden lehkomyslný tah a jsi zpět na nule. Zvládneš skutečný žár?"
+      },
+      "oracle": {
+        "name": "Oracle",
+        "role": "Strategická Logika",
+        "quote": "Emoce jsou šum. Tvá analýza říká prodat, tvé srdce říká držet. Kdo právě teď vyhrává?"
+      },
+      "steady": {
+        "name": "Steady",
+        "role": "Kontrola Pulsu",
+        "quote": "Dýchej. Tvůj tep právě vyskočil. Pokud nedokážeš ovládat své tělo, nedokážeš ovládat své obchody."
+      },
+      "echo": {
+        "name": "Echo",
+        "role": "Zrcadlení Trhu",
+        "quote": "Trh zrcadlí tvůj strach. Váháš. Jsi obchodník nebo oběť trendu?"
+      },
+      "nexus": {
+        "name": "Nexus",
+        "role": "Konečný Rozhodce",
+        "quote": "Gratuluji k výhře. Teď mi řekni, proč jsi stále v tomto obchodu. Chamtivost je tichý zabiják."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Vyberte Svou Trajektorii",
+    "description": "Ať už pokládáte první kámen nebo saháte ke hvězdám, máme pro vás připravenou cestu.",
+    "foundation": {
+      "label": "Základní Kámen",
+      "title": "Zdarma Přístup",
+      "desc": "Základní stavební kámen pro každého začátečníka.",
+      "cta": "Začít Základy",
+      "features": [
+        "Úvod do Trhů",
+        "Základy Psychologie",
+        "Řízení Rizik 101",
+        "Prohlídka Platformy Nexus",
+        "Přístup do Komunity"
+      ]
+    },
+    "cosmic": {
+      "label": "Kosmická Elita",
+      "title": "€2,490",
+      "lifetime": "Doživotně",
+      "desc": "Kompletní trénink psychologické války a nástrojů.",
+      "cta": "Vzestoupit k Elitě",
+      "features": [
+        "260+ Modulárních Video Přednášek",
+        "Plný Přístup do Psychologické Arény",
+        "Vlastní Sada AI Analytiky",
+        "Přímé Hovory 1 na 1 s AI Mentorem",
+        "Integrace Chytrého Obchodního Deníku",
+        "Institucionální Engine Rizika",
+        "Výhody Partnerské Burzy"
+      ]
+    }
+  },
+  "social": {
+    "status": "AI Moderovaný Feed",
+    "title": "Globální Sociální Zeď",
+    "description": "Aktivní filtr kvality. AI odstraňuje šum a ponechává pouze poznatky institucionální úrovně.",
+    "verified": "Ověřený Poznatek",
+    "cta": "Připojit se k Diskuzi",
+    "posts": {
+      "alex": { "content": "Aréna mi dnes skutečně zachránila účet. Slyšel jsem v hlavě Steadyho hlas, jak mi říká, ať dýchám, těsně předtím, než jsem málem udělal FOMO vstup." },
+      "elena": { "content": "Právě jsem dokončila Video 142 o institucionální likviditě. Všechno konečně zapadlo. AI analytické nástroje ten výběr zvýraznily dokonale." },
+      "jonas": { "content": "Nexus AI analytik právě nahlásil masivní divergenci na DXY. Chytá ještě někdo ten breakout na zlatě?" }
+    }
+  },
+  "footer": {
+    "description": "Věnuje se obchodnímu vzdělávání na institucionální úrovni. Poháněno AI, vedeno výsledky. Ovládněte trhy, ovládněte sami sebe.",
+    "partnerships": "Partnerství",
+    "legal": {
+      "title": "Právní Informace",
+      "terms": "Podmínky",
+      "privacy": "Soukromí",
+      "risk": "Riziko"
+    },
+    "rights": "© 2026 AI Trading Academy. Všechna práva vyhrazena.",
+    "motto": "Architektura Mistrovství."
+  }
+}

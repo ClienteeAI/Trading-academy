@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Rocket, Github, Twitter, Linkedin, ExternalLink } from 'lucide-react';
 
 const partners = [
@@ -8,6 +9,7 @@ const partners = [
 ];
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-bg py-24 border-t border-border">
         <div className="max-w-7xl mx-auto px-10">
@@ -17,7 +19,7 @@ export default function Footer() {
                         <span className="text-xl font-serif font-light tracking-[0.2em] uppercase">AI Academy</span>
                     </div>
                     <p className="text-text-dim max-w-sm mb-10 font-light italic leading-relaxed text-[13px]">
-                        Dedicated to institutional-grade trading education. Powered by AI, driven by results. Master the markets, master yourself.
+                        {t('footer.description')}
                     </p>
                     <div className="flex items-center gap-8 text-white/20">
                         <Twitter size={18} className="hover:text-accent cursor-pointer transition-colors" />
@@ -26,7 +28,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <h4 className="font-sans font-bold uppercase tracking-[0.3em] text-[9px] mb-10 text-white/40">Partnerships</h4>
+                    <h4 className="font-sans font-bold uppercase tracking-[0.3em] text-[9px] mb-10 text-white/40">{t('footer.partnerships')}</h4>
                     <ul className="space-y-4">
                         {partners.map(p => (
                             <li key={p.name}>
@@ -39,18 +41,18 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <h4 className="font-sans font-bold uppercase tracking-[0.3em] text-[9px] mb-10 text-white/40">Legal</h4>
+                    <h4 className="font-sans font-bold uppercase tracking-[0.3em] text-[9px] mb-10 text-white/40">{t('footer.legal.title')}</h4>
                     <ul className="space-y-4 text-text-dim text-[11px] uppercase tracking-widest font-light">
-                        <li className="hover:text-white transition-colors cursor-pointer">Terms</li>
-                        <li className="hover:text-white transition-colors cursor-pointer">Privacy</li>
-                        <li className="hover:text-white transition-colors cursor-pointer">Risk</li>
+                        <li className="hover:text-white transition-colors cursor-pointer">{t('footer.legal.terms')}</li>
+                        <li className="hover:text-white transition-colors cursor-pointer">{t('footer.legal.privacy')}</li>
+                        <li className="hover:text-white transition-colors cursor-pointer">{t('footer.legal.risk')}</li>
                     </ul>
                 </div>
             </div>
 
             <div className="pt-12 border-t border-border flex flex-col md:flex-row items-center justify-between gap-6 text-[9px] font-sans uppercase tracking-[0.4em] text-white/10">
-                <span>© 2026 AI Trading Academy. All Rights Reserved.</span>
-                <span className="italic">The Architecture of Mastery.</span>
+                <span>{t('footer.rights')}</span>
+                <span className="italic">{t('footer.motto')}</span>
             </div>
         </div>
     </footer>

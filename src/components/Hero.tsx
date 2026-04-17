@@ -1,39 +1,21 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState, useEffect } from 'react';
+import { useTranslation, Trans } from 'react-i18next';
 import { ChevronDown, PlayCircle } from 'lucide-react';
 
 interface HeroDeck {
-  label: string;
-  headline: React.ReactNode;
-  description: string;
+  id: string;
   videoSrc: string;
-  features: { title: string; desc: string }[];
 }
 
 const decks: HeroDeck[] = [
   {
-    label: "The Future of Market Education",
-    headline: <>Mastering the<br/>Internal Game</>,
-    description: "Experience the world's first AI-driven academy focused on the architecture of trading psychology. Beyond technical analysis—we rebuild your mind for the arena.",
+    id: "deck1",
     videoSrc: "/hero-trading.mp4",
-    features: [
-      { title: "The Arena", desc: "Simulate high-pressure scenarios with 5 AI psychological archetypes." },
-      { title: "AI Calculator", desc: "Precise risk distribution and position sizing at your fingertips." },
-      { title: "Smart Diary", desc: "An AI-monitored journal that analyzes your emotional patterns." },
-      { title: "Mentor AI", desc: "24/7 personalized coaching based on your specific trading data." }
-    ]
   },
   {
-    label: "The Cost of Unpreparedness",
-    headline: <>Don't Be Left<br/>In The Blur</>,
-    description: "The markets move faster than human emotion can process. While the world moves at breakneck speeds, most traders are lost in the velocity. Stop reacting. Start anticipating.",
+    id: "deck2",
     videoSrc: "/hero-market-speed.mp4",
-    features: [
-      { title: "Velocity Check", desc: "Live feed analyzing market speed against your psychological baseline." },
-      { title: "Speed Mastery", desc: "Training modules focused on high-speed decision making." },
-      { title: "Cognitive Load", desc: "Monitor your mental bandwidth during periods of extreme volatility." },
-      { title: "Stillness Training", desc: "Learn to remain calm and objective while the charts explode." }
-    ]
   }
 ];
 
@@ -41,6 +23,7 @@ const TIMER_DURATION = 15000;
 
 export default function Hero() {
   const [currentDeckIndex, setCurrentDeckIndex] = useState(0);
+  const { t } = useTranslation();
   const activeDeck = decks[currentDeckIndex];
 
   useEffect(() => {
@@ -98,21 +81,23 @@ export default function Hero() {
             className="lg:w-3/5"
           >
             <span className="hero-label uppercase tracking-[4px] text-[11px] text-accent font-sans mb-4 block">
-              {activeDeck.label}
+              {t(`hero.${activeDeck.id}.label`)}
             </span>
             <h1 className="text-[64px] md:text-[84px] font-serif font-light mb-6 leading-[1.1] tracking-tighter">
-              {activeDeck.headline}
+              <Trans i18nKey={`hero.${activeDeck.id}.headline`}>
+                Mastering the<br/>Internal Game
+              </Trans>
             </h1>
             <p className="text-lg text-text-dim max-w-lg mb-10 font-sans font-light leading-relaxed">
-              {activeDeck.description}
+              {t(`hero.${activeDeck.id}.description`)}
             </p>
             
             <div className="flex items-center gap-8">
               <button className="px-6 py-2.5 bg-accent text-bg font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all">
-                265 Modules Live • English
+                {t(`hero.${activeDeck.id}.modules`)}
               </button>
               <button className="text-[11px] uppercase tracking-widest text-white/40 hover:text-white transition-colors border-b border-white/10 pb-1">
-                Explore Timeline
+                {t(`hero.${activeDeck.id}.explore`)}
               </button>
             </div>
           </motion.div>
@@ -125,10 +110,14 @@ export default function Hero() {
               transition={{ duration: 1, delay: 0.7 }}
               className="lg:w-2/5 grid grid-cols-2 gap-4 relative"
           >
-              {activeDeck.features.map((f, i) => (
-                  <div key={i} className="bg-white/[0.03] backdrop-blur-md border border-white/5 p-6 rounded-sm hover:border-accent/30 transition-colors group cursor-default">
-                      <h3 className="font-serif text-accent text-[13px] uppercase tracking-widest mb-3 group-hover:text-white transition-colors">{f.title}</h3>
-                      <p className="text-[11px] text-text-dim leading-relaxed">{f.desc}</p>
+              {[0, 1, 2, 3].map((idx) => (
+                  <div key={idx} className="bg-white/[0.03] backdrop-blur-md border border-white/5 p-6 rounded-sm hover:border-accent/30 transition-colors group cursor-default">
+                      <h3 className="font-serif text-accent text-[13px] uppercase tracking-widest mb-3 group-hover:text-white transition-colors">
+                        {t(`features.steps.0${idx + (currentDeckIndex === 0 ? 1 : 3)}.title`)}
+                      </h3>
+                      <p className="text-[11px] text-text-dim leading-relaxed">
+                        {t(`features.steps.0${idx + (currentDeckIndex === 0 ? 1 : 3)}.desc`)}
+                      </p>
                   </div>
               ))}
           </motion.div>
@@ -151,7 +140,7 @@ export default function Hero() {
         transition={{ duration: 2, repeat: Infinity }}
         className="absolute bottom-10 left-10 z-20 text-white/20"
       >
-        <span className="text-[10px] uppercase tracking-[4px] block mb-2">Scroll</span>
+        <span className="text-[10px] uppercase tracking-[4px] block mb-2">{t('hero.scroll')}</span>
         <div className="w-[1px] h-12 bg-white/10" />
       </motion.div>
     </section>

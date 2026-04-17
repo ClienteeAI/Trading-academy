@@ -1,0 +1,153 @@
+{
+  "nav": {
+    "lessons": "260+ Lessons",
+    "tools": "AI Tools",
+    "arena": "Arena",
+    "partners": "Account Partners"
+  },
+  "hero": {
+    "deck1": {
+      "label": "The Future of Market Education",
+      "headline": "Mastering the Internal Game",
+      "description": "Experience the world's first AI-driven academy focused on the architecture of trading psychology. Beyond technical analysis—we rebuild your mind for the arena.",
+      "modules": "260 Modules Live • English",
+      "explore": "Explore Timeline"
+    },
+    "deck2": {
+      "label": "The Cost of Unpreparedness",
+      "headline": "Don't Be Left In The Blur",
+      "description": "The markets move faster than human emotion can process. While the world moves at breakneck speeds, most traders are lost in the velocity. Stop reacting. Start anticipating.",
+      "modules": "260 Modules Live • English",
+      "explore": "Explore Timeline"
+    },
+    "scroll": "Scroll"
+  },
+  "features": {
+    "label": "Engineered for Mastery",
+    "title": "Proprietary Engine",
+    "description": "We don't just teach trading; we provide the professional-grade toolset used by institutional players. Ascend through the ecosystem.",
+    "level": "Level",
+    "steps": {
+      "01": {
+        "title": "Video Academy",
+        "desc": "Access 260+ premium masterclasses in English, covering everything from foundation to institutional strategies.",
+        "stat": "260+ Videos"
+      },
+      "02": {
+        "title": "Market Analysis AI",
+        "desc": "Proprietary AI tools that process millions of data points to highlight high-probability market opportunities.",
+        "stat": "Real-time"
+      },
+      "03": {
+        "title": "AI Mentor",
+        "desc": "A personalized AI trainer available 24/7 to answer your complex questions and review your strategies.",
+        "stat": "Always Live"
+      },
+      "04": {
+        "title": "Intelligent Diary",
+        "desc": "An advanced trading journal that uses AI to analyze your performance and emotional patterns.",
+        "stat": "Smart Logging"
+      },
+      "05": {
+        "title": "Risk Calculator",
+        "desc": "Precision engineering for your positioning. Calculate risk-to-reward ratios and lot sizes instantly.",
+        "stat": "Zero Error"
+      },
+      "06": {
+        "title": "Social Wall",
+        "desc": "A collaborative hub moderated by AI to ensure high-quality insights and authentic community sharing.",
+        "stat": "Moderated"
+      }
+    }
+  },
+  "arena": {
+    "status": "Arena Active Now",
+    "title": "The Psychology Arena",
+    "description": "Meet the 5 Simulated Speakers testing current participants on \"Risk & Greed\". They push you to simulate the architecture of trading mastery.",
+    "cta": "Enter Simulation",
+    "speakers": {
+      "punisher": {
+        "name": "The Punisher",
+        "role": "Equity Protection",
+        "quote": "You're profitable today. So what? One reckless move and you're back to zero. Can you handle real heat?"
+      },
+      "oracle": {
+        "name": "The Oracle",
+        "role": "Strategic Logic",
+        "quote": "Emotions are noise. Your analysis says sell, your heart says hold. Who is winning right now?"
+      },
+      "steady": {
+        "name": "Steady",
+        "role": "Pulse Control",
+        "quote": "Breathe. Your heart rate just spiked. If you can't control your body, you can't control your trades."
+      },
+      "echo": {
+        "name": "Echo",
+        "role": "Market Reflection",
+        "quote": "The market is mirroring your fear. You're hesitating. Are you a trader or a victim of the trend?"
+      },
+      "nexus": {
+        "name": "Nexus",
+        "role": "The Final Arbiter",
+        "quote": "Congratulations on the win. Now, tell me why you're still in this trade. Greed is a silent killer."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Select Your Trajectory",
+    "description": "Whether you're laying the first stone or reaching for the cosmos, we have the path ready.",
+    "foundation": {
+      "label": "The Foundation Stone",
+      "title": "Free Access",
+      "desc": "The fundamental building block for every beginner.",
+      "cta": "Begin Foundation",
+      "features": [
+        "Introduction to Markets",
+        "Psychology Basics",
+        "Risk Management 101",
+        "Nexus Platform Tour",
+        "Community Access"
+      ]
+    },
+    "cosmic": {
+      "label": "Cosmos Elite",
+      "title": "€2,490",
+      "lifetime": "Lifetime",
+      "desc": "Complete psychological warfare training & tools.",
+      "cta": "Ascend to Elite",
+      "features": [
+        "260+ Modular Video Lectures",
+        "Full Psychology Arena Access",
+        "Proprietary AI Analytics Suite",
+        "Direct 1-on-1 AI Mentor Calls",
+        "Smart Trading Diary Integration",
+        "Institutional Risk Engine",
+        "Partner Exchange Benefits"
+      ]
+    }
+  },
+  "social": {
+    "status": "AI Moderated Feed",
+    "title": "Global Social Wall",
+    "description": "Quality filter active. AI removes noise, leaving only institutional-grade insights.",
+    "verified": "Verified Insight",
+    "cta": "Join the Conversation",
+    "posts": {
+      "alex": { "content": "The Arena actually saved my account today. I heard Steady's voice in my head telling me to breathe before I almost FOMO'd into a bad entry." },
+      "elena": { "content": "Just finished Video 142 on Institutional Liquidity. Everything finally clicked. The AI Analytics tools really highlighted the grab perfectly." },
+      "jonas": { "content": "Nexus AI Analyst just flagged a massive divergence in the DXY. Anyone else catching the gold breakout?" }
+    }
+  },
+  "footer": {
+    "description": "Dedicated to institutional-grade trading education. Powered by AI, driven by results. Master the markets, master yourself.",
+    "partnerships": "Partnerships",
+    "legal": {
+      "title": "Legal",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "risk": "Risk"
+    },
+    "rights": "© 2026 AI Trading Academy. All Rights Reserved.",
+    "motto": "The Architecture of Mastery."
+  }
+}

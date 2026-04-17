@@ -1,28 +1,30 @@
 import { motion } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 import { MessageSquare, Layout, Sparkles, UserCheck } from 'lucide-react';
 
 const posts = [
   {
+    key: "alex",
     user: "Alex M.",
     role: "Prop Trader",
-    content: "The Arena actually saved my account today. I heard Steady's voice in my head telling me to breathe before I almost FOMO'd into a bad entry.",
     time: "2m ago"
   },
   {
+    key: "elena",
     user: "Elena R.",
     role: "Swing Trader",
-    content: "Just finished Video 142 on Institutional Liquidity. Everything finally clicked. The AI Analytics tools really highlighted the grab perfectly.",
     time: "15m ago"
   },
   {
+    key: "jonas",
     user: "Jonas K.",
     role: "Fundamentals Expert",
-    content: "Nexus AI Analyst just flagged a massive divergence in the DXY. Anyone else catching the gold breakout?",
     time: "45m ago"
   }
 ];
 
 export default function SocialWall() {
+  const { t } = useTranslation();
   return (
     <section className="py-32 bg-bg border-t border-border">
        <div className="max-w-7xl mx-auto px-10">
@@ -30,14 +32,14 @@ export default function SocialWall() {
                 <div>
                      <div className="flex items-center gap-2 text-accent mb-4 uppercase tracking-[0.3em] font-sans text-[10px]">
                         <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                        AI Moderated Feed
+                        {t('social.status')}
                      </div>
                      <h2 className="text-4xl md:text-5xl font-serif font-light uppercase tracking-tighter">
                         Global <span className="text-white/20">Social Wall</span>
                      </h2>
                 </div>
                 <p className="text-text-dim max-w-sm text-right hidden md:block italic text-[13px] font-light">
-                    Quality filter active. AI removes noise, leaving only institutional-grade insights.
+                    {t('social.description')}
                 </p>
             </div>
 
@@ -56,10 +58,10 @@ export default function SocialWall() {
                             <span className="text-[9px] font-sans text-white/20 uppercase tracking-widest">{post.time}</span>
                         </div>
                         <p className="text-[13px] text-text-dim italic font-light leading-relaxed mb-10 flex-grow">
-                            "{post.content}"
+                            "{t(`social.posts.${post.key}.content`)}"
                         </p>
                         <div className="flex items-center gap-4 text-white/10 uppercase font-sans text-[9px] tracking-[0.2em]">
-                            <span>Verified Insight</span>
+                            <span>{t('social.verified')}</span>
                         </div>
                     </motion.div>
                 ))}
@@ -67,7 +69,7 @@ export default function SocialWall() {
 
             <div className="mt-16 text-center">
                 <button className="text-text-dim text-[10px] font-sans uppercase tracking-[0.4em] hover:text-white transition-colors border-b border-transparent hover:border-accent pb-1">
-                    Join the Conversation
+                    {t('social.cta')}
                 </button>
             </div>
        </div>
