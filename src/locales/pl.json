@@ -3,151 +3,151 @@
     "lessons": "260+ Lekcji",
     "tools": "Narzędzia AI",
     "arena": "Arena",
-    "partners": "Partnerzy Kont"
+    "partners": "Partnerzy"
   },
   "hero": {
     "deck1": {
-      "label": "Przyszłość Edukacji Rynkowej",
-      "headline": "Mistrzostwo Wewnętrznej Gry",
-      "description": "Poznaj pierwszą na świecie akademię napędzaną przez AI, skupioną na architekturze psychologii tradingu. Poza analizą techniczną — przebudowujemy Twój umysł do walki na arenie.",
-      "modules": "260 Modułów na Żywo • Angielski",
-      "explore": "Eksploruj Oś Czasu"
+      "label": "Przyszłość edukacji tradingowej",
+      "headline": "Mistrzostwo w grze<br/>psychologicznej",
+      "description": "Poznaj pierwszą na świecie akademię napędzaną przez AI, skupioną na architekturze psychologii tradingu. Wykraczamy daleko poza analizę techniczną – przebudowujemy Twoją mentalność do walki na arenie rynkowej.",
+      "modules": "260+ Modułów • Angielski",
+      "explore": "Poznaj program"
     },
     "deck2": {
-      "label": "Koszt Nieprzygotowania",
-      "headline": "Nie Zostań w Cieniu",
-      "description": "Rynki poruszają się szybciej, niż ludzkie emocje są w stanie przetworzyć. Podczas gdy świat pędzi, większość traderów gubi się w prędkości. Przestań reagować. Zacznij przewidywać.",
-      "modules": "260 Modułów na Żywo • Angielski",
-      "explore": "Eksploruj Oś Czasu"
+      "label": "Koszt braku przygotowania",
+      "headline": "Nie daj się pochłonąć<br/>rynkowemu chaosowi",
+      "description": "Rynki poruszają się szybciej, niż ludzkie emocje są w stanie przetworzyć. Podczas gdy świat pędzi, większość traderów gubi się w prędkości zmian. Przestań reagować na wykres. Zacznij go przewidywać.",
+      "modules": "260+ Modulów • Angielski",
+      "explore": "Poznaj program"
     },
     "scroll": "Przewiń"
   },
   "features": {
-    "label": "Zaprojektowane dla Mistrzostwa",
-    "title": "Własny Silnik",
-    "description": "Nie tylko uczymy tradingu; zapewniamy profesjonalny zestaw narzędzi używany przez graczy instytucjonalnych. Wzniesie się przez ekosystem.",
+    "label": "Zaprojektowane dla przyszłych mistrzów",
+    "title": "Nasz ekosystem technologiczny",
+    "description": "Nie jesteśmy tylko szkołą tradingu; dostarczamy profesjonalny zestaw narzędzi wykorzystywany przez graczy instytucjonalnych. Wejdź do naszego ekosystemu i wznieś się na wyższy poziom.",
     "level": "Poziom",
     "steps": {
       "01": {
         "title": "Akademia Wideo",
-        "desc": "Dostęp do ponad 260 lekcji premium w języku angielskim, obejmujących wszystko od podstaw po strategie instytucjonalne.",
+        "desc": "Dostęp do ponad 260 lekcji premium w języku angielskim, obejmujących wszystko: od fundamentów po zaawansowane strategie instytucjonalne.",
         "stat": "260+ Filmów"
       },
       "02": {
         "title": "Analiza Rynku AI",
-        "desc": "Autorskie narzędzia AI przetwarzające miliony punktów danych w celu wskazania okazji o wysokim prawdopodobieństwie.",
-        "stat": "Czas Rzeczywisty"
+        "desc": "Autorskie narzędzia AI przetwarzające miliony punktów danych, aby wskazać Ci okazje rynkowe o najwyższym prawdopodobieństwie sukcesu.",
+        "stat": "Czas rzeczywisty"
       },
       "03": {
         "title": "Mentor AI",
-        "desc": "Spersonalizowany trener AI dostępny 24/7, gotowy odpowiedzieć na złożone pytania i przejrzeć Twoje strategie.",
-        "stat": "Zawsze na Żywo"
+        "desc": "Twój osobisty trener AI dostępny 24/7. Odpowie na trudne pytania, przeanalizuje Twoje strategie i zadba o Twój ciągły rozwój.",
+        "stat": "Zawsze online"
       },
       "04": {
         "title": "Inteligentny Dziennik",
-        "desc": "Zaawansowany dziennik tradingowy wykorzystujący AI do analizy wyników i wzorców emocjonalnych.",
-        "stat": "Inteligentne Logi"
+        "desc": "Zaawansowany dziennik tradingowy wykorzystujący AI do głębokiej analizy Twoich wyników i wykrywania ukrytych schematów emocjonalnych.",
+        "stat": "Statystyki AI"
       },
       "05": {
         "title": "Kalkulator Ryzyka",
-        "desc": "Precyzyjna inżynieria Twojej pozycji. Błyskawicznie obliczaj stosunek ryzyka do zysku oraz wielkość lotów.",
-        "stat": "Zero Błędów"
+        "desc": "Precyzyjna inżynieria każdej pozycji. Błyskawicznie obliczaj stosunek ryzyka do zysku (RRR) oraz optymalną wielkość lotów.",
+        "stat": "Zero błędów"
       },
       "06": {
         "title": "Ściana Społeczności",
-        "desc": "Wspólny hub moderowany przez AI, zapewniający wysoką jakość spostrzeżeń i autentyczne dzielenie się wiedzą.",
-        "stat": "Moderowane"
+        "desc": "Centrum społecznościowe moderowane przez AI, które filtruje szum i dba o to, by dzielono się tylko wartościowymi spostrzeżeniami.",
+        "stat": "Moderacja AI"
       }
     }
   },
   "arena": {
-    "status": "Arena Aktywna Teraz",
-    "title": "Arena Psychologii",
-    "description": "Poznaj 5 symulowanych mówców testujących uczestników pod kątem „Ryzyka i Chciwości”. Zmuszają Cię do symulacji architektury mistrzostwa.",
-    "cta": "Wejdź do Symulacji",
+    "status": "Arena jest teraz aktywna",
+    "title": "Arena psychologii",
+    "description": "Poznaj 5 unikalnych archetypów psychologicznych AI, które testują uczestników w zakresie „Ryzyka i Chciwości”. Zmuszają Cię do symulacji warunków rynkowych, które sprawdzą Twoją dyscyplinę.",
+    "cta": "Wejdź do symulacji",
     "speakers": {
       "punisher": {
-        "name": "Punisher",
-        "role": "Ochrona Kapitału",
-        "quote": "Dziś zarobiłeś. I co z tego? Jeden lekkomyślny ruch i wracasz do zera. Czy poradzisz sobie w prawdziwym ogniu?"
+        "name": "The Punisher",
+        "role": "Ochrona kapitału",
+        "quote": "Dziś zarobiłeś. I co z tego? Jeden lekkomyślny ruch i wracasz do zera. Czy poradzisz sobie w prawdziwym ogniu rynkowym?"
       },
       "oracle": {
-        "name": "Oracle",
-        "role": "Logika Strategiczna",
-        "quote": "Emocje to szum. Twoja analiza mówi sprzedaj, serce mówi trzymaj. Kto teraz wygrywa?"
+        "name": "The Oracle",
+        "role": "Logika strategiczna",
+        "quote": "Emocje to tylko szum. Twoja analiza mówi: sprzedaj, ale serce chce trzymać. Kto teraz kontroluje Twoją myszkę?"
       },
       "steady": {
         "name": "Steady",
-        "role": "Kontrola Pulsu",
-        "quote": "Oddychaj. Twoje tętno właśnie skoczyło. Jeśli nie kontrolujesz ciała, nie kontrolujesz swoich transakcji."
+        "role": "Kontrola tętna",
+        "quote": "Oddychaj. Twoje tętno właśnie skoczyło. Jeśli nie kontrolujesz własnego ciała, nigdy nie zapanujesz nad swoimi transakcjami."
       },
       "echo": {
         "name": "Echo",
-        "role": "Odbicie Rynku",
-        "quote": "Rynek odzwierciedla Twój strach. Wahasz się. Jesteś traderem czy ofiarą trendu?"
+        "role": "Odbicie rynku",
+        "quote": "Rynek jest lustrem Twojego strachu. Wahasz się. Jesteś prawdziwym traderem czy tylko ofiarą chwilowego trendu?"
       },
       "nexus": {
         "name": "Nexus",
-        "role": "Ostateczny Arbiter",
-        "quote": "Gratuluję wygranej. Teraz powiedz mi, dlaczego wciąż jesteś w tej transakcji. Chciwość to cichy zabójca."
+        "role": "Ostateczny arbiter",
+        "quote": "Gratuluję zysku. Teraz powiedz mi szczerze: dlaczego wciąż trzymasz tę pozycję? Chciwość to cichy zabójca kont."
       }
     }
   },
   "pricing": {
-    "title": "Wybierz Swoją Trajektorię",
-    "description": "Niezależnie od tego, czy kładziesz pierwszy kamień, czy sięgasz do gwiazd, mamy gotową drogę.",
+    "title": "Wybierz swoją trajektorię",
+    "description": "Niezależnie od tego, czy kładziesz pierwszy kamień milowy, czy sięgasz gwiazd wśród elity, mamy dla Ciebie przygotowaną ścieżkę.",
     "foundation": {
-      "label": "Kamień Węgielny",
-      "title": "Darmowy Dostęp",
-      "desc": "Podstawowy budulec dla każdego początkującego.",
-      "cta": "Zacznij Podstawy",
+      "label": "Kamień węgielny",
+      "title": "Darmowy dostęp",
+      "desc": "Podstawowy fundament dla każdego ambitnego początkującego tradera.",
+      "cta": "Zacznij naukę",
       "features": [
-        "Wprowadzenie do Rynków",
-        "Podstawy Psychologii",
-        "Zarządzanie Ryzykiem 101",
-        "Tour po Platformie Nexus",
-        "Dostęp do Społeczności"
+        "Wprowadzenie do rynków",
+        "Podstawy psychologii tradingu",
+        "Zarządzanie ryzykiem 101",
+        "Przegląd platformy Nexus",
+        "Dostęp do podstawowej społeczności"
       ]
     },
     "cosmic": {
       "label": "Kosmiczna Elita",
       "title": "€2,490",
-      "lifetime": "Dożywotnio",
-      "desc": "Kompletny trening wojny psychologicznej i narzędzia.",
-      "cta": "Awansuj do Elity",
+      "lifetime": "Na zawsze",
+      "desc": "Kompletny trening wojny psychologicznej i profesjonalne narzędzia bez żadnych limitów.",
+      "cta": "Dołącz do elity",
       "features": [
-        "260+ Modularnych Lekcji Wideo",
-        "Pełny Dostęp do Areny Psychologii",
-        "Własna Paczka Analityki AI",
-        "Bezpośrednie Sesje 1-na-1 z Mentorem AI",
-        "Integracja z Inteligentnym Dziennikiem",
-        "Instytucjonalny Silnik Ryzyka",
-        "Korzyści z Partnerskich Giełd"
+        "260+ modułowych lekcji wideo",
+        "Pełny dostęp do Areny Psychologii",
+        "Autorski pakiet analityki AI",
+        "Bezpośrednie sesje 1-na-1 z mentorem AI",
+        "Integracja z inteligentnym dziennikiem",
+        "Instytucjonalny silnik zarządzania ryzykiem",
+        "Ekskluzywne korzyści u partnerów"
       ]
     }
   },
   "social": {
-    "status": "Feed Moderowany przez AI",
-    "title": "Globalna Ściana Socjalna",
-    "description": "Aktywny filtr jakości. AI usuwa szum, pozostawiając tylko instytucjonalne spostrzeżenia.",
-    "verified": "Zweryfikowany Wgląd",
-    "cta": "Dołącz do Rozmowy",
+    "status": "Feed moderowany przez AI",
+    "title": "Globalna ściana społeczności",
+    "description": "Aktywny filtr jakości w czasie rzeczywistym. AI usuwa szum, pozostawiając jedynie spostrzeżenia na poziomie instytucjonalnym.",
+    "verified": "Zweryfikowany wgląd",
+    "cta": "Dołącz do dyskusji",
     "posts": {
-      "alex": { "content": "Arena faktycznie uratowała dziś moje konto. Słyszałem w głowie głos Steady'ego mówiący mi, bym oddychał, tuż przed tym, jak prawie wszedłem w FOMO." },
-      "elena": { "content": "Właśnie skończyłam wideo 142 o płynności instytucjonalnej. Wszystko w końcu kliknęło. Narzędzia AI idealnie to podkreśliły." },
-      "jonas": { "content": "Analityk AI Nexus właśnie zgłosił ogromną dywergencję na DXY. Czy ktoś jeszcze łapie ten breakout na złocie?" }
+      "alex": { "content": "Arena faktycznie uratowała dzisiaj moje konto. Słyszałem w głowie głos Steady'ego mówiący mi: oddychaj, tuż przed tym, jak prawie wszedłem w FOMO." },
+      "elena": { "content": "Właśnie skończyłam wideo 142 o płynności instytucjonalnej. Wszystko w końcu zaczęło mieć sens. Narzędzia AI idealnie wskazały to miejsce." },
+      "jonas": { "content": "Analityk AI Nexus właśnie zgłosił potężną dywergencję na DXY. Czy ktoś jeszcze łapie ten breakout na złocie?" }
     }
   },
   "footer": {
-    "description": "Dedykowani edukacji tradingowej na poziomie instytucjonalnym. Napędzani przez AI, prowadzeni wynikami. Opanuj rynki, opanuj siebie.",
+    "description": "Dedykowani edukacji tradingowej na najwyższym poziomie. Napędzani przez AI, prowadzeni wynikami. Opanuj rynki, opanuj siebie.",
     "partnerships": "Partnerstwa",
     "legal": {
-      "title": "Informacje Prawne",
+      "title": "Informacje prawne",
       "terms": "Regulamin",
-      "privacy": "Prywatność",
-      "risk": "Ryzyko"
+      "privacy": "Polityka prywatności",
+      "risk": "Ostrzeżenie o ryzyku"
     },
     "rights": "© 2026 AI Trading Academy. Wszelkie prawa zastrzeżone.",
-    "motto": "Architektura Mistrzostwa."
+    "motto": "Architektura mistrzostwa w tradingu."
   }
 }
