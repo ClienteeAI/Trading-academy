@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
@@ -13,6 +14,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showLangs, setShowLangs] = useState(false);
   const { t, i18n } = useTranslation();
+  const location = useLocation();
   const langRef = useRef<HTMLDivElement>(null);
 
   const currentLang = languages.find(l => l.code === i18n.language.split('-')[0]) || languages[0];
@@ -27,19 +29,45 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  const isHome = location.pathname === '/';
+
+  const NavLink = ({ href, children, isAccent = false }: { href: string, children: React.ReactNode, isAccent?: boolean }) => {
+    if (href.startsWith('#')) {
+      return (
+        <a 
+          href={isHome ? href : `/${href}`} 
+          className={`transition-colors hover:text-accent ${isAccent ? 'text-accent' : ''}`}
+          onClick={() => setIsOpen(false)}
+        >
+          {children}
+        </a>
+      );
+    }
+    return (
+      <Link 
+        to={href} 
+        className={`transition-colors hover:text-accent ${isAccent ? 'text-accent' : ''}`}
+        onClick={() => setIsOpen(false)}
+      >
+        {children}
+      </Link>
+    );
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-bg/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-10">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center gap-4">
-            <span className="text-xl font-serif font-light tracking-[0.2em] uppercase">AI Academy</span>
-          </div>
+          <Link to="/" className="flex items-center gap-4 group">
+            <img src="/logo.png" alt="Finademica" className="h-14 w-auto object-contain brightness-110 group-hover:scale-105 transition-transform" />
+          </Link>
           
           <div className="hidden md:flex items-center space-x-12 text-[11px] font-sans uppercase tracking-[0.15em] text-text-dim">
-            <a href="#education" className="hover:text-accent transition-colors">{t('nav.lessons')}</a>
-            <a href="#tools" className="hover:text-accent transition-colors">{t('nav.tools')}</a>
-            <a href="#arena" className="hover:text-accent transition-colors">{t('nav.arena')}</a>
-            <a href="#pricing" style={{ color: 'var(--color-accent)' }} className="transition-colors">{t('nav.partners')}</a>
+            <NavLink href="#education">{t('nav.lessons')}</NavLink>
+            <NavLink href="#tools">{t('nav.tools')}</NavLink>
+            <NavLink href="#arena">{t('nav.arena')}</NavLink>
+            <NavLink href="/career">{t('career.nav')}</NavLink>
+            <NavLink href="#pricing" isAccent>{t('nav.partners')}</NavLink>
             
             {/* Language Switcher */}
             <div className="relative" ref={langRef}>
@@ -98,18 +126,24 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      {isOpen && (
-        <motion.div 
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-surface border-b border-border px-10 pt-4 pb-10 flex flex-col space-y-6 text-center uppercase text-[11px] tracking-widest text-text-dim"
-        >
-          <a href="#education" onClick={() => setIsOpen(false)}>{t('nav.lessons')}</a>
-          <a href="#tools" onClick={() => setIsOpen(false)}>{t('nav.tools')}</a>
-          <a href="#arena" onClick={() => setIsOpen(false)}>{t('nav.arena')}</a>
-          <a href="#pricing" className="text-accent" onClick={() => setIsOpen(false)}>{t('nav.partners')}</a>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-surface border-b border-border overflow-hidden"
+          >
+            <div className="px-10 pt-4 pb-10 flex flex-col space-y-6 text-center uppercase text-[11px] tracking-widest text-text-dim">
+              <NavLink href="#education">{t('nav.lessons')}</NavLink>
+              <NavLink href="#tools">{t('nav.tools')}</NavLink>
+              <NavLink href="#arena">{t('nav.arena')}</NavLink>
+              <NavLink href="/career">{t('career.nav')}</NavLink>
+              <NavLink href="#pricing" isAccent>{t('nav.partners')}</NavLink>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }

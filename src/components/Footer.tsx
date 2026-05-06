@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
                 <div className="md:col-span-2">
                     <div className="flex items-center gap-2 mb-10">
-                        <span className="text-xl font-serif font-light tracking-[0.2em] uppercase">AI Academy</span>
+                        <img src="/logo.png" alt="Finademica" className="h-12 w-auto object-contain opacity-90" />
                     </div>
                     <p className="text-text-dim max-w-sm mb-10 font-light italic leading-relaxed text-[13px]">
                         {t('footer.description')}
@@ -37,6 +37,13 @@ export default function Footer() {
                                 </a>
                             </li>
                         ))}
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 className="font-sans font-bold uppercase tracking-[0.3em] text-[9px] mb-10 text-white/40">Work with us</h4>
+                    <ul className="space-y-4 text-text-dim text-[11px] uppercase tracking-widest font-light">
+                        <li><a href="/career" className="hover:text-accent transition-colors">{t('career.nav')}</a></li>
                     </ul>
                 </div>
 

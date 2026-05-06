@@ -149,5 +149,61 @@
     },
     "rights": "© 2026 AI Trading Academy. All Rights Reserved.",
     "motto": "The Architecture of Mastery."
+  },
+  "career": {
+    "nav": "Career",
+    "hero": {
+      "label": "Finademica.com – Recruitment Hub",
+      "headline": "Skip the lecture. Start the trade. Join Finademica.",
+      "subheadline": "We are looking for ambitious high school graduates. Master world-class trading and the art of professional communication with top-tier clients. Your success is your degree."
+    },
+    "why": {
+      "title": "Why Finademica?",
+      "items": [
+        {
+          "title": "The Real Academy",
+          "desc": "Forget textbooks. We teach you real-market mechanics and the high-stakes psychology of sales from day one."
+        },
+        {
+          "title": "High-Level Communication",
+          "desc": "You are the face of the firm. Learn how to negotiate, persuade, and build lasting relations with high-net-worth individuals."
+        },
+        {
+          "title": "Uncapped Potential",
+          "desc": "No salary ceilings. Your income scales with your analytical rigor and your ability to close deals."
+        }
+      ]
+    },
+    "role": {
+      "title": "The Role (Sales Trader Hybrid)",
+      "analysis": {
+        "title": "50% Analysis & Strategy",
+        "desc": "Monitoring news wires and charts to find trade setups in crypto, gold, and equity markets."
+      },
+      "communication": {
+        "title": "50% Communication & Sales",
+        "desc": "Being active on the phone, engaging with clients, and pitching your market views. Closing the deal."
+      }
+    },
+    "roadmap": {
+      "title": "Career Roadmap",
+      "steps": [
+        {
+          "time": "0–1 Month",
+          "title": "Bootcamp",
+          "desc": "Communication bootcamp and trading fundamentals."
+        },
+        {
+          "time": "2–6 Months",
+          "title": "Junior Position",
+          "desc": "Junior position under a mentor, building your own client portfolio."
+        },
+        {
+          "time": "12+ Months",
+          "title": "Senior Trader",
+          "desc": "Senior Trader status, managing large volumes or leading your own desk."
+        }
+      ]
+    }
   }
 }

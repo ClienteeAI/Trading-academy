@@ -149,5 +149,61 @@
     },
     "rights": "© 2026 AI Trading Academy. Všechna práva vyhrazena.",
     "motto": "Architektura obchodního mistrovství."
+  },
+  "career": {
+    "nav": "Kariéra",
+    "hero": {
+      "label": "Finademica.com – Náborový Hub",
+      "headline": "Získej náskok před svými vrstevníky. Ovládni trhy s Finademica.",
+      "subheadline": "Hledáme dravé absolventy po maturitě. Naučíme tě trading světové úrovně a umění jednat s nejúspěšnějšími lidmi v byznysu. Tvůj diplom je tvoje schopnost doručovat výsledky."
+    },
+    "why": {
+      "title": "Proč se přidat k Finademica?",
+      "items": [
+        {
+          "title": "Akademie praxe",
+          "desc": "Zapomeň na teorii. Od prvního dne tě učíme reálné mechanismy trhu a psychologii prodeje."
+        },
+        {
+          "title": "Prestižní komunikace",
+          "desc": "Budeš hlasem naší firmy. Naučíš se, jak argumentovat a budovat důvěru u bonitních klientů."
+        },
+        {
+          "title": "Finanční svoboda",
+          "desc": "Žádné platové stropy. Tvůj příjem odráží tvůj zápal, analytické myšlení a komunikační dovednosti."
+        }
+      ]
+    },
+    "role": {
+      "title": "Tvá hybridní role (Sales Trader)",
+      "analysis": {
+        "title": "50 % Analýza & Strategie",
+        "desc": "Sleduješ Bloomberg, analyzuješ grafy (akcie, krypto, komodity) ani připravuješ obchodní scénáře."
+      },
+      "communication": {
+        "title": "50 % Komunikace & Sales",
+        "desc": "Zvedáš telefon, kontaktuješ klienty a prezentuješ jim investiční příležitosti. Prodáváš svou vizi."
+      }
+    },
+    "roadmap": {
+      "title": "Kariérní cesta",
+      "steps": [
+        {
+          "time": "0–1. měsíc",
+          "title": "Bootcamp komunikace",
+          "desc": "Intenzivní trénink základů tradingu a komunikačních dovedností."
+        },
+        {
+          "time": "2–6. měsíc",
+          "title": "Junior role",
+          "desc": "Působení pod mentorem, budování vlastního kmene klientů."
+        },
+        {
+          "time": "12+ měsíců",
+          "title": "Senior Trader",
+          "desc": "Status Senior Tradera s vlastním týmem nebo specializací na velké objemy."
+        }
+      ]
+    }
   }
 }

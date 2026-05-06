@@ -44,29 +44,27 @@ export default function Hero() {
           transition={{ duration: 1.5, ease: "easeInOut" }}
           className="absolute inset-0 z-0"
         >
-          {/* Diagonal Video Section */}
-          <div 
-            className="absolute inset-0 z-0 overflow-hidden"
-            style={{ 
-              clipPath: 'polygon(66.6% 0, 100% 0, 100% 100%, 33.3% 100%)',
-              backgroundColor: '#111'
-            }}
-          >
+          {/* Background Video (Now Full Screen) */}
+          <div className="absolute inset-0 z-0 overflow-hidden">
             <video
               autoPlay
               muted
               loop
               playsInline
-              className="w-full h-full object-cover opacity-60"
+              className="w-full h-full object-cover"
               src={activeDeck.videoSrc}
             />
-            {/* Gold Overlay */}
-            <div className="absolute inset-0 bg-accent/10 mix-blend-overlay pointer-events-none" />
-            <div className="absolute inset-0 bg-gradient-to-l from-bg/20 via-transparent to-bg z-10" />
+            {/* Dark Overlays: Left side semi-transparent, right side fully transparent */}
+            <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/80 to-transparent z-10 w-full" />
+            
+            {/* Subtle Gold highlight for the original diagonal feel */}
+            <div 
+              className="absolute inset-0 z-20 bg-accent/5"
+              style={{ 
+                clipPath: 'polygon(66.6% 0, 100% 0, 100% 100%, 33.3% 100%)',
+              }}
+            />
           </div>
-
-          {/* Left Content Area Background (Darkening) */}
-          <div className="absolute inset-0 z-[-1] bg-bg" />
         </motion.div>
       </AnimatePresence>
 
