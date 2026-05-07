@@ -5,6 +5,7 @@ import { ArrowLeft, Calendar, User, Tag, ChevronRight, BookOpen } from 'lucide-r
 import { useEffect, useState } from 'react';
 import { blogPostsData } from '../data/blogPostsData';
 import { dictionaryData } from '../data/dictionaryData';
+import { linkifyContent } from '../utils/termLinker';
 
 export default function BlogPost() {
   const { slug } = useParams();
@@ -14,14 +15,40 @@ export default function BlogPost() {
   
   const post = blogPostsData[slug || ''];
 
+  // Pro-linking: Process content to add automatic links
+  const processedContent = useMemo(() => {
+    if (!post) return '';
+    return linkifyContent(post.content[currentLang], dictionaryData, currentLang);
+  }, [post, currentLang]);
+
   useEffect(() => {
     if (post) {
       document.title = `${post.title[currentLang]} | Finademica`;
-      // Update meta description (hacky but works for client-side SEO)
+      // Update meta description
       const meta = document.querySelector('meta[name="description"]');
       if (meta) meta.setAttribute('content', post.excerpt[currentLang]);
     }
   }, [post, currentLang]);
+
+  // Handle SPA navigation for pro-links
+  useEffect(() => {
+    const handleLinkClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const anchor = target.closest('a');
+      
+      if (anchor && anchor.classList.contains('pro-link')) {
+        e.preventDefault();
+        const href = anchor.getAttribute('href');
+        if (href) {
+          navigate(href);
+          window.scrollTo(0, 0);
+        }
+      }
+    };
+
+    document.addEventListener('click', handleLinkClick);
+    return () => document.removeEventListener('click', handleLinkClick);
+  }, [navigate]);
 
   if (!post) {
     return (
@@ -135,7 +162,7 @@ export default function BlogPost() {
                     prose-p:text-lg prose-p:font-light prose-p:leading-relaxed prose-p:text-text-dim
                     prose-strong:text-white prose-strong:font-bold
                     prose-ul:list-disc prose-ul:pl-6 prose-li:text-text-dim prose-li:mb-2"
-                  dangerouslySetInnerHTML={{ __html: post.content[currentLang] }} 
+                  dangerouslySetInnerHTML={{ __html: processedContent }} 
                 />
 
                 {/* Related Dictionary Terms */}

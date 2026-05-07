@@ -1,7 +1,8 @@
 import { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'motion/react';
-import { Search, ChevronDown, ArrowRight } from 'lucide-react';
+import { Search, ChevronDown, ArrowRight, BookOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { dictionaryData, dictionaryCategories, DictionaryTerm } from '../data/dictionaryData';
 
 export default function Dictionary() {
@@ -58,7 +59,7 @@ export default function Dictionary() {
           {/* Categories Grid (Bricks) */}
           <div className="grid grid-cols-1 gap-6">
             {categoriesWithTerms.map((cat) => (
-              <div key={cat.id} className="border border-white/5 bg-white/[0.01] overflow-hidden">
+              <div key={cat.id} className="border border-white/5 bg-white/[0.01]">
                 <button 
                   onClick={() => setExpandedCategory(expandedCategory === cat.id ? null : cat.id)}
                   className="w-full px-8 py-8 flex items-center justify-between hover:bg-white/[0.03] transition-colors group"
@@ -108,16 +109,19 @@ function TermItem({ term, lang }: { term: DictionaryTerm, lang: 'en' | 'cs' | 'p
 
   return (
     <div 
-      className="py-4 border-b border-white/5 last:border-0 relative group cursor-help"
+      className="py-4 border-b border-white/5 last:border-0 relative group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="flex items-center justify-between">
+      <Link 
+        to={`/blog/${term.slug}`}
+        className="flex items-center justify-between cursor-pointer group/link"
+      >
         <span className="text-[13px] font-sans tracking-wide text-white/80 group-hover:text-accent transition-colors">
           {term.title[lang]}
         </span>
         <ArrowRight size={12} className="text-accent opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all" />
-      </div>
+      </Link>
 
       <AnimatePresence>
         {isHovered && (
@@ -125,18 +129,19 @@ function TermItem({ term, lang }: { term: DictionaryTerm, lang: 'en' | 'cs' | 'p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
-            className="absolute z-20 top-full left-0 w-full md:w-[300px] bg-surface border border-accent/20 p-6 shadow-2xl mt-2 backdrop-blur-xl"
+            className="absolute z-[100] top-full left-0 w-full md:w-[320px] bg-surface border border-accent/30 p-6 shadow-2xl mt-2 backdrop-blur-2xl rounded-sm"
+            style={{ pointerEvents: 'none' }} // Tooltip shouldn't block clicking the link
           >
-            <p className="text-xs text-text-dim leading-relaxed mb-4">
-              {term.description[lang]}
-            </p>
-            <a 
-              href={`/blog/${term.slug}`} 
-              className="text-[10px] uppercase tracking-widest text-accent font-bold flex items-center gap-2 hover:gap-3 transition-all"
-            >
-              {lang === 'cs' ? 'Číst celý článek' : lang === 'pl' ? 'Przeczytaj cały artykuł' : 'Read full article'}
-              <ArrowRight size={10} />
-            </a>
+            <div className="mb-4">
+              <span className="text-[10px] uppercase tracking-widest text-accent font-bold mb-2 block">Definice</span>
+              <p className="text-xs text-text-dim leading-relaxed italic">
+                {term.description[lang]}
+              </p>
+            </div>
+            <div className="flex items-center gap-2 text-[9px] uppercase tracking-widest text-accent/60">
+              <BookOpen size={10} />
+              Klikněte pro hloubkovou analýzu
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

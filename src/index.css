@@ -19,3 +19,12 @@
     @apply bg-bg text-white font-sans antialiased;
   }
 }
+
+.pro-link {
+  @apply text-accent border-b border-accent/30 no-underline transition-all duration-300;
+}
+
+.pro-link:hover {
+  @apply text-white border-accent bg-accent/10;
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.4);
+}
