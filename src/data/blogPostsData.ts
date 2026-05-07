@@ -429,6 +429,7 @@ export const blogPostsData: Record<string, BlogPost> = {
         <h2 id="podsumowanie">Podsumowanie: Twoja droga do wolności</h2>
         <p>Wolność finansowa nie polega na tym, ile zarabiasz, ale na tym, jakou část Twoich wydatków pokrywają Twoje aktywa. V momencie, gdy dochód pasywny z Twoich aktywów przewyższy Twoje koszty życia, jesteś wolny. V Finademica naučymy Cię, jak tę maszynę do pieniędzy zbudovat, zarządzać niou i ją chronić. Začněte budować swoją armię aktywów już dziś.</p>
       `
+    }
   },
   "financial-market": {
     slug: "financial-market",
@@ -736,6 +737,7 @@ export const blogPostsData: Record<string, BlogPost> = {
         <h2 id="podsumowanie">Podsumowanie: Bądź bykiem z chłodną głową</h2>
         <p>Bycie częścią rynku byka to ekscytująca droga do bogactwa. W Finademica uczymy Cię, jak wcześnie identyfikować te fale, jak maksymalizować swoje <strong>ROI</strong> i przede wszystkim, jak rozpoznać, kiedy nadszedł czas na realizację zysków. Nie daj się opanować emocjom tłumu. Bądź tym, który ma plan, a nie tym, który tylko ma nadzieję. Twoja droga do wolności finansowej zaczyna się od zrozumienia tych cykli. </p>
       `
+    }
   },
   "bear-market": {
     slug: "bear-market",
@@ -1004,6 +1006,7 @@ export const blogPostsData: Record<string, BlogPost> = {
         <h2 id="podsumowanie">Podsumowanie: Zaakceptuj chaos</h2>
         <p>Rynki finansowe są chaotyczne i woatylne. Taka jest ich natura. W Finademica nauczymy Cię mierzyć, rozumieć i przede wszystkim wykorzystywać zmienność jako narzędzie do osiągania celów finansowych. Przestań bać się fal i zacznij uczyć się, jak zbudować łódź, która im sprosta. Woatylność to silnik zysków – naucz się go kontrolować.</p>
       `
+    }
   },
   "liquidity": {
     slug: "liquidity",
