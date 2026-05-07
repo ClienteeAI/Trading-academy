@@ -53,8 +53,9 @@ export function linkifyContent(content: string, dictionary: DictionaryTerm[], cu
       // However, we can check if the processedText already contains the link.
       
       processedText = processedText.replace(regex, (match) => {
-        // Simple check to avoid double wrapping (very basic)
-        return `<a href="/blog/${term.slug}" class="pro-link" title="${term.description[currentLang].substring(0, 100)}...">${match}</a>`;
+        const description = term.description[currentLang] || '';
+        const shortDesc = description.length > 100 ? description.substring(0, 100) + '...' : description;
+        return `<a href="/blog/${term.slug}" class="pro-link" title="${shortDesc}">${match}</a>`;
       });
     });
 
