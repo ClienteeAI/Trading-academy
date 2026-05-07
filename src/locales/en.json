@@ -3,6 +3,8 @@
     "lessons": "260+ Lessons",
     "tools": "AI Tools",
     "arena": "Arena",
+    "blog": "Blog",
+    "dictionary": "Dictionary",
     "partners": "Account Partners"
   },
   "hero": {
@@ -25,7 +27,8 @@
   "features": {
     "label": "Engineered for Mastery",
     "title": "Proprietary Engine",
-    "description": "We don't just teach trading; we provide the professional-grade toolset used by institutional players. Ascend through the ecosystem.",
+    "description": "We don't just teach trading; we provide the professional-grade toolset used by institutional players. Discover the full potential of our technological ecosystem.",
+    "ecosystem": "THE ECOSYSTEM",
     "level": "Level",
     "steps": {
       "01": {
@@ -35,7 +38,7 @@
       },
       "02": {
         "title": "Market Analysis AI",
-        "desc": "Proprietary AI tools that process millions of data points to highlight high-probability market opportunities.",
+        "desc": "Proprietary AI tools that process millions of data points to analyze high-probability market opportunities.",
         "stat": "Real-time"
       },
       "03": {
@@ -63,33 +66,38 @@
   "arena": {
     "status": "Arena Active Now",
     "title": "The Psychology Arena",
-    "description": "Meet the 5 Simulated Speakers testing current participants on \"Risk & Greed\". They push you to simulate the architecture of trading mastery.",
+    "description": "Meet the 5 Simulated Gladiators testing current participants on \"Risk & Greed\". They push you to simulate the architecture of trading mastery.",
     "cta": "Enter Simulation",
     "speakers": {
       "punisher": {
-        "name": "The Punisher",
-        "role": "Equity Protection",
-        "quote": "You're profitable today. So what? One reckless move and you're back to zero. Can you handle real heat?"
+        "name": "Victor Hale",
+        "role": "The Pressure Broker",
+        "quote": "\"You're profitable today. So what? One reckless move and you're back to zero. Can you handle real heat?\"",
+        "desc": "A senior market broker who applies cold, calculated pressure. He doesn't shout — he waits. His silence is the loudest thing in the room. Expect outcome devaluation and skill questioning."
       },
       "oracle": {
-        "name": "The Oracle",
-        "role": "Strategic Logic",
-        "quote": "Emotions are noise. Your analysis says sell, your heart says hold. Who is winning right now?"
+        "name": "Marcus Stone",
+        "role": "The Confidence Dissector",
+        "quote": "\"Emotions are noise. Your analysis says sell, your heart says hold. Who is winning right now?\"",
+        "desc": "A cold, dismissive market counterpart who has seen thousands of traders fail. He doesn't punch — he cuts. Specialist in dissecting your confidence down to its core elements."
       },
       "steady": {
-        "name": "Steady",
-        "role": "Pulse Control",
-        "quote": "Breathe. Your heart rate just spiked. If you can't control your body, you can't control your trades."
+        "name": "Nina Graves",
+        "role": "The Fear Amplifier",
+        "quote": "\"Breathe. Your heart rate just spiked. If you can't control your body, you can't control your trades.\"",
+        "desc": "A calm, fear-amplifying market voice that sounds unsettlingly reasonable. She amplifies uncertainty, raises plausible negative scenarios, and pressures your insecurities."
       },
       "echo": {
-        "name": "Echo",
-        "role": "Market Reflection",
-        "quote": "The market is mirroring your fear. You're hesitating. Are you a trader or a victim of the trend?"
+        "name": "Ryan Wolfe",
+        "role": "The Revenge Dealer",
+        "quote": "\"The market is mirroring your fear. You're hesitating. Are you a trader or a victim of the trend?\"",
+        "desc": "A persuasive, opportunistic market voice that appears after a loss. He doesn't threaten — he offers relief. Expect normalization of impulsive behavior and a false sense of control."
       },
       "nexus": {
-        "name": "Nexus",
-        "role": "The Final Arbiter",
-        "quote": "Congratulations on the win. Now, tell me why you're still in this trade. Greed is a silent killer."
+        "name": "Elias Moore",
+        "role": "The Silent Observer",
+        "quote": "\"Congratulations on the win. Now, tell me why you're still in this trade. Greed is a silent killer.\"",
+        "desc": "A calm, neutral presence who speaks very little. He doesn't pressure, seduce, or judge — he mirrors your own words back to you, exposing internal contradictions."
       }
     }
   },
@@ -122,7 +130,7 @@
         "Direct 1-on-1 AI Mentor Calls",
         "Smart Trading Diary Integration",
         "Institutional Risk Engine",
-        "Partner Exchange Benefits"
+        "Partner Benefits"
       ]
     }
   },
@@ -141,6 +149,7 @@
   "footer": {
     "description": "Dedicated to institutional-grade trading education. Powered by AI, driven by results. Master the markets, master yourself.",
     "partnerships": "Partnerships",
+    "work": "Work with us",
     "legal": {
       "title": "Legal",
       "terms": "Terms",
@@ -204,6 +213,36 @@
           "desc": "Senior Trader status, managing large volumes or leading your own desk."
         }
       ]
+    },
+    "form": {
+      "title": "Start Your Journey",
+      "desc": "Fill out the form below and our recruitment team will reach out shortly.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "education": "Education",
+      "field": "Field",
+      "submit": "Submit Application",
+      "success": "Application Received",
+      "successDesc": "Thank you for your interest. We will contact you soon.",
+      "degreeMsg": "Your Ambition is Your Degree",
+      "floorAccess": "Trading Floor Access",
+      "floorDesc": "High-frequency environment designed for rapid growth and mental fortitude.",
+      "placeholders": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@example.com",
+        "phone": "+420 123 456 789",
+        "field": "Business, Tech, etc."
+      },
+      "educationOptions": {
+        "select": "Select",
+        "highSchool": "High School",
+        "bachelor": "Bachelor",
+        "master": "Master",
+        "other": "Other"
+      }
     }
   }
 }

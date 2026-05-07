@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform, useSpring } from 'motion/react';
 import { useRef } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { Video, Cpu, Brain, BookOpen, Calculator, LayoutPanelTop } from 'lucide-react';
 
 const featureIcons = [
@@ -29,12 +29,14 @@ export default function Features() {
   const featureKeys = ["01", "02", "03", "04", "05", "06"];
 
   return (
-    <section id="tools" ref={containerRef} className="py-60 bg-bg relative overflow-hidden">
+    <section id="tools" ref={containerRef} className="py-24 lg:py-60 bg-bg relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-10">
             <div className="max-w-2xl mb-32 relative z-10">
                 <span className="text-accent font-sans text-[10px] uppercase tracking-[4px] mb-4 block">{t('features.label')}</span>
-                <h2 className="text-5xl md:text-7xl font-serif font-light mb-8 tracking-tighter">
-                    Proprietary <span className="text-accent italic">Engine</span>
+                <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif font-light mb-8 tracking-tighter">
+                    <Trans i18nKey="features.title">
+                      Proprietary <span className="text-accent italic">Engine</span>
+                    </Trans>
                 </h2>
                 <p className="text-text-dim text-lg font-light leading-relaxed">
                     {t('features.description')}
@@ -54,9 +56,8 @@ export default function Features() {
             </div>
         </div>
 
-        {/* Decorative background text */}
-        <div className="absolute top-1/2 left-0 w-full select-none pointer-events-none opacity-[0.02] transform -translate-y-1/2">
-             <span className="text-[30vw] font-bold whitespace-nowrap leading-none">THE ECOSYSTEM</span>
+        <div className="absolute top-1/2 left-0 w-full select-none pointer-events-none opacity-[0.02] transform -translate-y-1/2 overflow-hidden">
+             <span className="text-[20vw] lg:text-[30vw] font-bold whitespace-nowrap leading-none">{t('features.ecosystem')}</span>
         </div>
     </section>
   );
@@ -69,9 +70,9 @@ function FeatureCard({ featureKey, icon, index, progress }: { featureKey: string
     return (
         <motion.div 
             style={{ y }}
-            className="flex-1 relative min-h-[450px] bg-white/[0.02] backdrop-blur-3xl border border-white/5 p-10 flex flex-col justify-between group hover:bg-white/[0.04] transition-colors duration-500 overflow-hidden"
+            className="flex-1 relative min-h-[350px] lg:min-h-[450px] bg-white/[0.02] backdrop-blur-3xl border border-white/5 p-8 lg:p-10 flex flex-col justify-between group hover:bg-white/[0.04] transition-colors duration-500 overflow-hidden"
         >
-            <span className="absolute -top-10 -right-10 text-[10rem] font-bold text-white/[0.03] leading-none select-none pointer-events-none group-hover:text-accent/[0.03] transition-colors">
+            <span className="absolute -top-6 -right-6 lg:-top-10 lg:-right-10 text-[6rem] lg:text-[10rem] font-bold text-white/[0.03] leading-none select-none pointer-events-none group-hover:text-accent/[0.03] transition-colors">
                 {featureKey}
             </span>
 

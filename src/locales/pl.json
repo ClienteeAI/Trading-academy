@@ -3,6 +3,8 @@
     "lessons": "260+ Lekcji",
     "tools": "Narzędzia AI",
     "arena": "Arena",
+    "blog": "Blog",
+    "dictionary": "Słownik pojęć",
     "partners": "Partnerzy"
   },
   "hero": {
@@ -25,7 +27,8 @@
   "features": {
     "label": "Zaprojektowane dla przyszłych mistrzów",
     "title": "Nasz ekosystem technologiczny",
-    "description": "Nie jesteśmy tylko szkołą tradingu; dostarczamy profesjonalny zestaw narzędzi wykorzystywany przez graczy instytucjonalnych. Wejdź do naszego ekosystemu i wznieś się na wyższy poziom.",
+    "description": "Nie jesteśmy tylko szkołą tradingu; dostarczamy profesjonalny zestaw narzędzi wykorzystywany przez graczy instytucjonalnych. Odkryj pełny potencjał naszego ekosystemu technologicznego.",
+    "ecosystem": "EKOSYSTEM",
     "level": "Poziom",
     "steps": {
       "01": {
@@ -35,7 +38,7 @@
       },
       "02": {
         "title": "Analiza Rynku AI",
-        "desc": "Autorskie narzędzia AI przetwarzające miliony punktów danych, aby wskazać Ci okazje rynkowe o najwyższym prawdopodobieństwie sukcesu.",
+        "desc": "Autorskie narzędzia AI przetwarzające miliony punktów danych, aby analizować okazje rynkowe o najwyższym prawdopodobieństwie sukcesu.",
         "stat": "Czas rzeczywisty"
       },
       "03": {
@@ -63,33 +66,38 @@
   "arena": {
     "status": "Arena jest teraz aktywna",
     "title": "Arena psychologii",
-    "description": "Poznaj 5 unikalnych archetypów psychologicznych AI, które testują uczestników w zakresie „Ryzyka i Chciwości”. Zmuszają Cię do symulacji warunków rynkowych, które sprawdzą Twoją dyscyplinę.",
+    "description": "Poznaj 5 unikalnych gladiatorów psychologicznych AI, które testują uczestników w zakresie „Ryzyka i Chciwości”. Zmuszają Cię do symulacji warunków rynkowych, które sprawdzą Twoją dyscyplinę.",
     "cta": "Wejdź do symulacji",
     "speakers": {
       "punisher": {
-        "name": "The Punisher",
-        "role": "Ochrona kapitału",
-        "quote": "Dziś zarobiłeś. I co z tego? Jeden lekkomyślny ruch i wracasz do zera. Czy poradzisz sobie w prawdziwym ogniu rynkowym?"
+        "name": "Victor Hale",
+        "role": "The Pressure Broker",
+        "quote": "\"Dziś zarobiłeś. I co z tego? Jeden lekkomyślny ruch i wracasz do zera. Czy poradzisz sobie w prawdziwym ogniu rynkowym?\"",
+        "desc": "Starszy makler rynkowy, który stosuje chłodną, wyrachowaną presję. Nie krzyczy – czeka. Jego cisza jest najgłośniejszą rzeczą w pokoju. Oczekuj dewaluacji swoich wyników i kwestionowania umiejętności."
       },
       "oracle": {
-        "name": "The Oracle",
-        "role": "Logika strategiczna",
-        "quote": "Emocje to tylko szum. Twoja analiza mówi: sprzedaj, ale serce chce trzymać. Kto teraz kontroluje Twoją myszkę?"
+        "name": "Marcus Stone",
+        "role": "The Confidence Dissector",
+        "quote": "\"Emocje to tylko szum. Twoja analiza mówi: sprzedaj, ale serce chce trzymać. Kto teraz kontroluje Twoją myszkę?\"",
+        "desc": "Chłodny, lekceważący przeciwnik, który widział tysiące traderów ponoszących klęskę. Nie uderza – tnie. Specjalista od rozkładania Twojej pewności siebie na czynniki pierwsze."
       },
       "steady": {
-        "name": "Steady",
-        "role": "Kontrola tętna",
-        "quote": "Oddychaj. Twoje tętno właśnie skoczyło. Jeśli nie kontrolujesz własnego ciała, nigdy nie zapanujesz nad swoimi transakcjami."
+        "name": "Nina Graves",
+        "role": "The Fear Amplifier",
+        "quote": "\"Oddychaj. Twoje tętno właśnie skoczyło. Jeśli nie kontrolujesz własnego ciała, nigdy ne zapanujesz nad swoimi transakcjami.\"",
+        "desc": "Spokojny, potęgujący strach głos, który brzmi niepokojąco rozsądnie. Wzmacnia niepewność, podrzuca prawdopodobne negatywne scenariusze i uderza w Twoje słabości."
       },
       "echo": {
-        "name": "Echo",
-        "role": "Odbicie rynku",
-        "quote": "Rynek jest lustrem Twojego strachu. Wahasz się. Jesteś prawdziwym traderem czy tylko ofiarą chwilowego trendu?"
+        "name": "Ryan Wolfe",
+        "role": "The Revenge Dealer",
+        "quote": "\"Rynek jest lustrem Twojego strachu. Wahasz się. Jesteś prawdziwym traderem czy tylko ofiarą chwilowego trendu?\"",
+        "desc": "Przekonujący, oportunistyczny głos, który pojawia się po stracie. Nie grozi – oferuje ulgę. Oczekuj normalizacji impulsywnych zachowań i fałszywego poczucia kontroli."
       },
       "nexus": {
-        "name": "Nexus",
-        "role": "Ostateczny arbiter",
-        "quote": "Gratuluję zysku. Teraz powiedz mi szczerze: dlaczego wciąż trzymasz tę pozycję? Chciwość to cichy zabójca kont."
+        "name": "Elias Moore",
+        "role": "The Silent Observer",
+        "quote": "\"Gratuluję zysku. Teraz powiedz mi szczerze: dlaczego wciąż trzymasz tę pozycję? Chciwość to cichy zabójca kont.\"",
+        "desc": "Spokojna, neutralna obecność, która mówi bardzo mało. Nie naciska, nie uwodzi, nie ocenia – odbija Twoje własne słowa z powrotem, ujawniając wewnętrzne sprzeczności."
       }
     }
   },
@@ -141,13 +149,99 @@
   "footer": {
     "description": "Dedykowani edukacji tradingowej na najwyższym poziomie. Napędzani przez AI, prowadzeni wynikami. Opanuj rynki, opanuj siebie.",
     "partnerships": "Partnerstwa",
+    "work": "Pracuj z nami",
     "legal": {
       "title": "Informacje prawne",
       "terms": "Regulamin",
       "privacy": "Polityka prywatności",
       "risk": "Ostrzeżenie o ryzyku"
     },
-    "rights": "© 2026 AI Trading Academy. Wszelkie prawa zastrzeżone.",
-    "motto": "Architektura mistrzostwa w tradingu."
+    "rights": "© 2026 AI Trading Academy. Wszelkie prawa zastrzeżone."
+  },
+  "career": {
+    "nav": "Kariera",
+    "hero": {
+      "label": "Finademica.com – Centrum Rekrutacji",
+      "headline": "Zyskaj przewagę nad rówieśnikami. Opanuj rynki z Finademica.",
+      "subheadline": "Szukamy ambitnych absolwentów szkół średnich. Nauczymy Cię światowej klasy tradingu i sztuki negocjacji z ludźmi sukcesu. Twoim dyplomem jest Twoja zdolność do dowożenia wyników."
+    },
+    "why": {
+      "title": "Dlaczego warto dołączyć do Finademica?",
+      "items": [
+        {
+          "title": "Akademia Praktyki",
+          "desc": "Zapomnij o teorii. Od pierwszego dnia uczymy Cię realnych mechanizmów rynkowych i psychologii sprzedaży."
+        },
+        {
+          "title": "Prestiżowa Komunikacja",
+          "desc": "Będziesz głosem naszej firmy. Nauczysz się argumentacji i budowania zaufania u zamożnych klientów."
+        },
+        {
+          "title": "Nielimitowane Zarobki",
+          "desc": "Brak sufitów płacowych. Twój dochód odzwierciedla Twoje zaangażowanie, myślenie analityczne i umiejętności handlowe."
+        }
+      ]
+    },
+    "role": {
+      "title": "Twoja hybrydowa rola (Sales Trader)",
+      "analysis": {
+        "title": "50% Analiza i Strategia",
+        "desc": "Śledzisz Bloomberg, analizujesz wykresy (akcje, krypto, towary) i przygotowujesz scenariusze handlowe."
+      },
+      "communication": {
+        "title": "50% Komunikacja i Sprzedaż",
+        "desc": "Odbierasz telefon, kontaktujesz się z klientami i prezentujesz im okazje inwestycyjne. Sprzedajesz swoją wizję."
+      }
+    },
+    "roadmap": {
+      "title": "Ścieżka Kariery",
+      "steps": [
+        {
+          "time": "0–1 Miesiąc",
+          "title": "Bootcamp Komunikacji",
+          "desc": "Intensywny trening podstaw tradingu i umiejętności komunikacyjnych."
+        },
+        {
+          "time": "2–6 Miesięcy",
+          "title": "Rola Juniora",
+          "desc": "Praca pod okiem mentora, budowanie własnej bazy klientów."
+        },
+        {
+          "time": "12+ Miesięcy",
+          "title": "Senior Trader",
+          "desc": "Status Senior Tradera z własnym zespołem lub specjalizacją w dużych wolumenach."
+        }
+      ]
+    },
+    "form": {
+      "title": "Rozpocznij Swoją Podróž",
+      "desc": "Wypełnij poniższy formularz, a nasz zespół rekrutacyjny skontaktuje się z Tobą wkrótce.",
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "email": "Email",
+      "phone": "Telefon",
+      "education": "Wykształcenie",
+      "field": "Kierunek",
+      "submit": "Wyślij Aplikację",
+      "success": "Aplikacja Otrzymana",
+      "successDesc": "Dziękujemy za zainteresowanie. Skontaktujemy się z Tobą wkrótce.",
+      "degreeMsg": "Twoja ambicja to Twój dyplom",
+      "floorAccess": "Dostęp do Trading Flooru",
+      "floorDesc": "Środowisko o wysokiej częstotliwości zaprojektowane dla szybkiego wzrostu.",
+      "placeholders": {
+        "firstName": "Jan",
+        "lastName": "Kowalski",
+        "email": "jan@przyklad.pl",
+        "phone": "+48 123 456 789",
+        "field": "Biznes, IT, itp."
+      },
+      "educationOptions": {
+        "select": "Wybierz",
+        "highSchool": "Średnie",
+        "bachelor": "Licencjat",
+        "master": "Magister",
+        "other": "Inne"
+      }
+    }
   }
 }

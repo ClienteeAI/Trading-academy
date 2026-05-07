@@ -3,6 +3,8 @@
     "lessons": "260+ Lekcí",
     "tools": "AI Nástroje",
     "arena": "Aréna",
+    "blog": "Blog",
+    "dictionary": "Slovník pojmů",
     "partners": "Partneři"
   },
   "hero": {
@@ -25,7 +27,8 @@
   "features": {
     "label": "Navrženo pro opravdové mistry",
     "title": "Náš technologický ekosystém",
-    "description": "Nenabízíme jen výuku tradingu; poskytujeme profesionální sadu nástrojů, kterou využívají i velcí institucionální hráči. Projděte naším ekosystémem a vzestupte.",
+    "description": "Nenabízíme jen výuku tradingu; poskytujeme profesionální sadu nástrojů, kterou využívají i velcí institucionální hráči. Objevte plný potenciál našeho technologického ekosystému.",
+    "ecosystem": "EKOSYSTÉM",
     "level": "Úroveň",
     "steps": {
       "01": {
@@ -35,7 +38,7 @@
       },
       "02": {
         "title": "AI Analýza Trhu",
-        "desc": "Naše vlastní AI nástroje zpracovávají miliony datových bodů, aby pro vás vyhledaly obchodní příležitosti s vysokou pravděpodobností úspěchu.",
+        "desc": "Naše vlastní AI nástroje zpracovávají miliony datových bodů, aby pro vás analyzovaly obchodní příležitosti s vysokou pravděpodobností úspěchu.",
         "stat": "Real-time"
       },
       "03": {
@@ -63,33 +66,38 @@
   "arena": {
     "status": "Aréna je právě aktivní",
     "title": "Psychologická aréna",
-    "description": "Poznejte 5 unikátních AI psychologických archetypů, kteří v reálném čase testují účastníky v oblasti „Rizika a chamtivosti“. Nutí vás simulovat situace, které prověří vaši disciplínu až na dřeň.",
+    "description": "Poznejte 5 unikátních AI psychologických gladiátorů, kteří v reálném čase testují účastníky v oblasti „Rizika a chamtivosti“. Nutí vás simulovat situace, které prověří vaši disciplínu až na dřeň.",
     "cta": "Vstoupit do simulace",
     "speakers": {
       "punisher": {
-        "name": "The Punisher",
-        "role": "Ochrana kapitálu",
-        "quote": "Dnes jsi v zisku. No a co? Jeden zbrklý tah a jsi zpět na nule. Zvládneš udržet disciplínu i pod skutečným tlakem?"
+        "name": "Victor Hale",
+        "role": "The Pressure Broker",
+        "quote": "\"Dnes jsi v zisku. No a co? Jeden zbrklý tah a jsi zpět na nule. Zvládneš udržet disciplínu i pod skutečným tlakem?\"",
+        "desc": "Seniorní tržní makléř, který aplikuje chladný, kalkulovaný tlak. Nekřičí – čeká. Jeho ticho je nejhlasitější věcí v místnosti. Očekávejte devalvaci vašich výsledků a zpochybnění vašich schopností."
       },
       "oracle": {
-        "name": "The Oracle",
-        "role": "Strategická logika",
-        "quote": "Emoce jsou jen šum. Tvá analýza velí prodat, ale tvé srdce chce držet. Kdo z nich právě teď ovládá tvou ruku?"
+        "name": "Marcus Stone",
+        "role": "The Confidence Dissector",
+        "quote": "\"Emoce jsou jen šum. Tvá analýza velí prodat, ale tvé srdce chce držet. Kdo z nich právě teď ovládá tvou ruku?\"",
+        "desc": "Chladný, přezíravý protihráč, který viděl tisíce traderů selhat. Neseká – řeže. Specialista na rozebírání vaší sebedůvěry až na základní stavební kameny."
       },
       "steady": {
-        "name": "Steady",
-        "role": "Kontrola tepu",
-        "quote": "Zhluboka dýchej. Tvůj tep právě vyskočil. Pokud nedokážeš ovládnout své tělo, nikdy neovládneš své obchody."
+        "name": "Nina Graves",
+        "role": "The Fear Amplifier",
+        "quote": "\"Zhluboka dýchej. Tvůj tep právě vyskočil. Pokud nedokážeš ovládnout své tělo, nikdy neovládneš své obchody.\"",
+        "desc": "Klidný, strach zesilující hlas, který zní znepokojivě rozumně. Zesiluje nejistotu, nadhazuje pravděpodobné negativní scénáře a tlačí na vaše nejistoty."
       },
       "echo": {
-        "name": "Echo",
-        "role": "Zrcadlení trhu",
-        "quote": "Trh je jen zrcadlem tvého strachu. Váháš. Jsi skutečný obchodník, nebo jen další oběť aktuálního trendu?"
+        "name": "Ryan Wolfe",
+        "role": "The Revenge Dealer",
+        "quote": "\"Trh je jen zrcadlem tvého strachu. Váháš. Jsi skutečný obchodník, nebo jen další oběť aktuálního trendu?\"",
+        "desc": "Přesvědčivý, oportunistický hlas, který se objevuje po ztrátě. Nevyhrožuje – nabízí úlevu. Očekávejte normalizaci impulzivního jednání a falešný pocit kontroly."
       },
       "nexus": {
-        "name": "Nexus",
-        "role": "Konečný soudce",
-        "quote": "Gratuluji k zisku. Teď mi ale upřímně řekni, proč v tom obchodu stále jsi. Chamtivost je tichý zabiják účtů."
+        "name": "Elias Moore",
+        "role": "The Silent Observer",
+        "quote": "\"Gratuluji k zisku. Teď mi ale upřímně řekni, proč v tom obchodu stále jsi. Chamtivost je tichý zabiják účtů.\"",
+        "desc": "Klidná, neutrální přítomnost, která mluví velmi málo. Netlačí, nesvádí, nesoudí – zrcadlí vaše vlastní slova zpět k vám a odhaluje vaše vnitřní rozpory."
       }
     }
   },
@@ -122,7 +130,7 @@
         "Přímé 1-na-1 konzultace s AI mentorem",
         "Integrace chytrého obchodního deníku",
         "Institucionální engine pro řízení rizika",
-        "Exkluzivní výhody u partnerských burz"
+        "Exkluzivní výhody u partnerů"
       ]
     }
   },
@@ -141,6 +149,7 @@
   "footer": {
     "description": "Věnujeme se obchodnímu vzdělávání na profesionální úrovni. Poháněno AI, vedeno výsledky. Ovládněte trhy, ovládněte sami sebe.",
     "partnerships": "Partnerství",
+    "work": "Pracujte s námi",
     "legal": {
       "title": "Právní náležitosti",
       "terms": "Obchodní podmínky",
@@ -178,7 +187,7 @@
       "title": "Tvá hybridní role (Sales Trader)",
       "analysis": {
         "title": "50 % Analýza & Strategie",
-        "desc": "Sleduješ Bloomberg, analyzuješ grafy (akcie, krypto, komodity) ani připravuješ obchodní scénáře."
+        "desc": "Sleduješ Bloomberg, analyzuješ grafy (akcie, krypto, komodity) a připravuješ obchodní scénáře."
       },
       "communication": {
         "title": "50 % Komunikace & Sales",
@@ -204,6 +213,36 @@
           "desc": "Status Senior Tradera s vlastním týmem nebo specializací na velké objemy."
         }
       ]
+    },
+    "form": {
+      "title": "Začni svou cestu",
+      "desc": "Vyplň formulář níže a náš náborový tým se ti brzy ozve.",
+      "firstName": "Jméno",
+      "lastName": "Příjmení",
+      "email": "Email",
+      "phone": "Telefon",
+      "education": "Vzdělání",
+      "field": "Obor",
+      "submit": "Odeslat přihlášku",
+      "success": "Přihláška přijata",
+      "successDesc": "Děkujeme za zájem. Brzy tě budeme kontaktovat.",
+      "degreeMsg": "Tvá ambice je tvůj diplom",
+      "floorAccess": "Přístup na Trading Floor",
+      "floorDesc": "High-frequency prostředí navržené pro rychlý růst a psychickou odolnost.",
+      "placeholders": {
+        "firstName": "Jan",
+        "lastName": "Novák",
+        "email": "jan@priklad.cz",
+        "phone": "+420 123 456 789",
+        "field": "Business, Tech, atd."
+      },
+      "educationOptions": {
+        "select": "Vyberte",
+        "highSchool": "Středoškolské",
+        "bachelor": "Bakalářské",
+        "master": "Magisterské",
+        "other": "Jiné"
+      }
     }
   }
 }

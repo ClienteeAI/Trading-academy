@@ -34,7 +34,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen min-h-[768px] flex items-center pt-20 overflow-hidden bg-bg">
+    <section className="relative min-h-screen lg:h-screen flex items-center pt-32 lg:pt-20 pb-20 lg:pb-0 overflow-hidden bg-bg">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentDeckIndex}
@@ -55,15 +55,11 @@ export default function Hero() {
               src={activeDeck.videoSrc}
             />
             {/* Dark Overlays: Left side semi-transparent, right side fully transparent */}
-            <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/80 to-transparent z-10 w-full" />
+            <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/90 to-transparent z-10 w-full" />
             
-            {/* Subtle Gold highlight for the original diagonal feel */}
-            <div 
-              className="absolute inset-0 z-20 bg-accent/5"
-              style={{ 
-                clipPath: 'polygon(66.6% 0, 100% 0, 100% 100%, 33.3% 100%)',
-              }}
-            />
+            {/* Ambient Brand Glows */}
+            <div className="absolute top-0 left-0 w-1/2 h-full bg-accent/20 blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-indigo-500/10 blur-[120px] pointer-events-none" />
           </div>
         </motion.div>
       </AnimatePresence>
@@ -78,20 +74,20 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.5 }}
             className="lg:w-3/5"
           >
-            <span className="hero-label uppercase tracking-[4px] text-[11px] text-accent font-sans mb-4 block">
+            <span className="hero-label uppercase tracking-[6px] text-[10px] text-accent font-bold mb-6 block">
               {t(`hero.${activeDeck.id}.label`)}
             </span>
-            <h1 className="text-[64px] md:text-[84px] font-serif font-light mb-6 leading-[1.1] tracking-tighter">
+            <h1 className="text-4xl md:text-6xl lg:text-[84px] font-serif font-light mb-8 leading-[1.2] lg:leading-[1.1] tracking-tighter">
               <Trans i18nKey={`hero.${activeDeck.id}.headline`}>
                 Mastering the<br/>Internal Game
               </Trans>
             </h1>
-            <p className="text-lg text-text-dim max-w-lg mb-10 font-sans font-light leading-relaxed">
+            <p className="text-xl text-text-dim max-w-lg mb-12 font-sans font-light leading-relaxed">
               {t(`hero.${activeDeck.id}.description`)}
             </p>
             
             <div className="flex items-center gap-8">
-              <button className="px-6 py-2.5 bg-accent text-bg font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all">
+              <button className="px-10 py-4 bg-accent text-white font-bold text-[11px] uppercase tracking-widest hover:bg-accent-vibrant transition-all shadow-2xl shadow-accent/40 rounded-sm">
                 {t(`hero.${activeDeck.id}.modules`)}
               </button>
               <button className="text-[11px] uppercase tracking-widest text-white/40 hover:text-white transition-colors border-b border-white/10 pb-1">
@@ -100,20 +96,21 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Right Side: Features Overlaying Video */}
+          {/* Right Side: Features Stacked (As requested by client) */}
           <motion.div 
               key={`features-${currentDeckIndex}`}
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.7 }}
-              className="lg:w-2/5 grid grid-cols-2 gap-4 relative"
+              className="lg:w-2/5 flex flex-col gap-4 lg:gap-6 relative w-full"
           >
               {[0, 1, 2, 3].map((idx) => (
-                  <div key={idx} className="bg-white/[0.03] backdrop-blur-md border border-white/5 p-6 rounded-sm hover:border-accent/30 transition-colors group cursor-default">
-                      <h3 className="font-serif text-accent text-[13px] uppercase tracking-widest mb-3 group-hover:text-white transition-colors">
+                  <div key={idx} className="bg-white/[0.03] backdrop-blur-xl border border-white/10 p-8 rounded-sm hover:border-accent/50 hover:bg-white/[0.06] transition-all group cursor-default relative overflow-hidden">
+                      <div className="absolute top-0 left-0 w-1.5 h-full bg-accent/20 group-hover:bg-accent transition-colors" />
+                      <h3 className="font-serif text-accent text-[15px] uppercase tracking-[0.1em] mb-3 group-hover:text-white transition-colors">
                         {t(`features.steps.0${idx + (currentDeckIndex === 0 ? 1 : 3)}.title`)}
                       </h3>
-                      <p className="text-[11px] text-text-dim leading-relaxed">
+                      <p className="text-[13px] text-text-dim leading-relaxed group-hover:text-white/70 transition-colors">
                         {t(`features.steps.0${idx + (currentDeckIndex === 0 ? 1 : 3)}.desc`)}
                       </p>
                   </div>

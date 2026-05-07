@@ -4,6 +4,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import CareerPage from './pages/CareerPage';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
+import Dictionary from './pages/Dictionary';
 import { motion, useScroll, useSpring } from 'motion/react';
 
 function ScrollToTop() {
@@ -39,6 +42,9 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/career" element={<CareerPage />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/dictionary" element={<Dictionary />} />
       </Routes>
 
       <Footer />

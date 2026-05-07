@@ -11,7 +11,7 @@ const partners = [
 export default function Footer() {
   const { t } = useTranslation();
   return (
-    <footer className="bg-bg py-24 border-t border-border">
+    <footer className="bg-bg py-16 lg:py-24 border-t border-border">
         <div className="max-w-7xl mx-auto px-10">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
                 <div className="md:col-span-2">
@@ -27,7 +27,8 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div>
+{/* Hiding partners section for now */}
+                {/* <div>
                     <h4 className="font-sans font-bold uppercase tracking-[0.3em] text-[9px] mb-10 text-white/40">{t('footer.partnerships')}</h4>
                     <ul className="space-y-4">
                         {partners.map(p => (
@@ -38,10 +39,10 @@ export default function Footer() {
                             </li>
                         ))}
                     </ul>
-                </div>
+                </div> */}
 
                 <div>
-                    <h4 className="font-sans font-bold uppercase tracking-[0.3em] text-[9px] mb-10 text-white/40">Work with us</h4>
+                    <h4 className="font-sans font-bold uppercase tracking-[0.3em] text-[9px] mb-10 text-white/40">{t('footer.work')}</h4>
                     <ul className="space-y-4 text-text-dim text-[11px] uppercase tracking-widest font-light">
                         <li><a href="/career" className="hover:text-accent transition-colors">{t('career.nav')}</a></li>
                     </ul>

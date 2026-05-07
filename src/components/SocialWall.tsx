@@ -52,12 +52,12 @@ export default function SocialWall() {
                     >
                         <div className="flex items-center justify-between mb-10">
                             <div className="flex flex-col">
-                                <h4 className="font-serif font-light text-[15px] tracking-tight text-accent">{post.user}</h4>
+                                <h4 className="font-serif font-light text-[15px] tracking-tight text-accent font-bold">{post.user}</h4>
                                 <p className="text-[9px] text-text-dim uppercase font-sans tracking-[0.2em]">{post.role}</p>
                             </div>
                             <span className="text-[9px] font-sans text-white/20 uppercase tracking-widest">{post.time}</span>
                         </div>
-                        <p className="text-[13px] text-text-dim italic font-light leading-relaxed mb-10 flex-grow">
+                        <p className="text-[13px] text-text-dim italic font-light leading-relaxed mb-10 flex-grow group-hover:text-white/80 transition-colors">
                             "{t(`social.posts.${post.key}.content`)}"
                         </p>
                         <div className="flex items-center gap-4 text-white/10 uppercase font-sans text-[9px] tracking-[0.2em]">
