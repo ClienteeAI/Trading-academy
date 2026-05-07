@@ -11,54 +11,57 @@ import { DictionaryTerm } from '../data/dictionaryData';
 export function linkifyContent(content: string, dictionary: DictionaryTerm[], currentLang: 'en' | 'cs' | 'pl'): string {
   if (!content) return '';
 
-  // Sort terms by length descending to match longest terms first
-  const terms = [...dictionary].sort((a, b) => b.title[currentLang].length - a.title[currentLang].length);
+  // 1. Prepare and sort terms (longest first to match "Bull Market" before "Market")
+  const validTerms = dictionary.filter(t => t.title[currentLang] && t.title[currentLang].length >= 3);
+  const terms = [...validTerms].sort((a, b) => b.title[currentLang].length - a.title[currentLang].length);
 
-  // Split content by HTML tags to avoid modifying attributes or tag names
+  if (terms.length === 0) return content;
+
+  // 2. Create a map for quick lookup and a single master regex
+  const termMap = new Map<string, DictionaryTerm>();
+  const patterns: string[] = [];
+
+  terms.forEach(term => {
+    const title = term.title[currentLang];
+    const escapedTitle = title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    
+    // Special handling for liquidity declensions in Czech
+    if (term.slug === 'liquidity' && currentLang === 'cs') {
+      const pattern = `\\b(likvidit[a-z]{0,2})\\b`;
+      patterns.push(pattern);
+      termMap.set('likvidita_pattern', term); // Use a marker for the regex group if needed, but here we'll handle it in the replacer
+    } else {
+      patterns.push(`\\b${escapedTitle}\\b`);
+    }
+    
+    termMap.set(title.toLowerCase(), term);
+  });
+
+  const masterRegex = new RegExp(patterns.join('|'), 'gi');
+
+  // 3. Split by HTML tags and process only text nodes
   const parts = content.split(/(<[^>]+>)/g);
 
   return parts.map(part => {
-    // If it's a tag, return as is
     if (part.startsWith('<')) return part;
 
-    // Process text content
-    let processedText = part;
-    
-    // Track which terms we've already linked to avoid double-linking or infinite loops
-    // But since we are doing a single pass per text node, we just need to be careful.
-    
-    terms.forEach(term => {
-      const termTitle = term.title[currentLang];
-      if (!termTitle || termTitle.length < 3) return; // Skip very short terms
-
-      // Escape special regex characters in the title
-      const escapedTitle = termTitle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // Single pass replacement to avoid nesting links
+    return part.replace(masterRegex, (match) => {
+      // Find the corresponding term
+      // We check exact match first, then base form for special cases
+      let term = termMap.get(match.toLowerCase());
       
-      // Basic word boundary regex
-      // In Czech/Polish, \b doesn't work well with accented characters, 
-      // but for standard titles it's often okay.
-      // We also handle common Czech declensions if the term is 'Likvidita'
-      let regexPattern = `\\b${escapedTitle}\\b`;
-      
-      // Special case for 'Likvidita' to catch 'likviditou', 'likvidity', etc.
-      if (term.slug === 'liquidity' && currentLang === 'cs') {
-        regexPattern = `\\b(Likvidit[a-z]{0,2})\\b`;
+      // Fallback for special patterns like liquidity
+      if (!term && match.toLowerCase().startsWith('likvidit')) {
+        term = dictionary.find(t => t.slug === 'liquidity');
       }
 
-      const regex = new RegExp(regexPattern, 'gi');
-      
-      // Only link if not already inside a link (this is harder with split tags, 
-      // but since we process text nodes, we are mostly safe unless the text 
-      // node itself is a child of an <a> which we won't know here without full parsing).
-      // However, we can check if the processedText already contains the link.
-      
-      processedText = processedText.replace(regex, (match) => {
-        const description = term.description[currentLang] || '';
-        const shortDesc = description.length > 100 ? description.substring(0, 100) + '...' : description;
-        return `<a href="/blog/${term.slug}" class="pro-link" title="${shortDesc}">${match}</a>`;
-      });
-    });
+      if (!term) return match;
 
-    return processedText;
+      const description = term.description[currentLang] || '';
+      const shortDesc = description.length > 100 ? description.substring(0, 100).trim() + '...' : description;
+      
+      return `<a href="/blog/${term.slug}" class="pro-link" title="${shortDesc}">${match}</a>`;
+    });
   }).join('');
 }
