@@ -2,7 +2,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
 import { ArrowLeft, Calendar, User, Tag, ChevronRight, BookOpen } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { blogPostsData } from '../data/blogPostsData';
 import { dictionaryData } from '../data/dictionaryData';
 import { linkifyContent } from '../utils/termLinker';
@@ -162,7 +162,7 @@ export default function BlogPost() {
                     prose-p:text-lg prose-p:font-light prose-p:leading-relaxed prose-p:text-text-dim
                     prose-strong:text-white prose-strong:font-bold
                     prose-ul:list-disc prose-ul:pl-6 prose-li:text-text-dim prose-li:mb-2"
-                  dangerouslySetInnerHTML={{ __html: post.content[currentLang] }} 
+                  dangerouslySetInnerHTML={{ __html: processedContent }} 
                 />
 
                 {/* Related Dictionary Terms */}
