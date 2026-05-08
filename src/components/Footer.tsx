@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Rocket, Github, Twitter, Linkedin, ExternalLink, X } from 'lucide-react';
+import { Rocket, Github, Twitter, Linkedin, ExternalLink, X, Facebook } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { LegalContent, RiskWarning } from './legal/LegalTexts';
@@ -60,8 +60,9 @@ export default function Footer() {
                       </p>
                       <div className="flex flex-col gap-6">
                           <div className="flex items-center gap-8 text-white/20">
-                              <Twitter size={18} className="hover:text-accent cursor-pointer transition-colors" />
-                              <Linkedin size={18} className="hover:text-accent cursor-pointer transition-colors" />
+                              <a href="https://www.facebook.com/profile.php?id=61589465729570" target="_blank" rel="noopener noreferrer">
+                                  <Facebook size={18} className="hover:text-accent cursor-pointer transition-colors" />
+                              </a>
                           </div>
                           <a href="mailto:hey@finademica.com" className="text-white/40 hover:text-accent transition-colors text-[11px] font-sans tracking-widest uppercase">
                               hey@finademica.com
